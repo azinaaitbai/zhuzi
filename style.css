@@ -7,6 +7,44 @@ body {
   overflow-x: hidden;
 }
 
+/* Dark Mode */
+.dark-mode {
+  background-color: #222;
+  color: #ddd;
+}
+
+.dark-mode .navbar {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark-mode .navigations a {
+  color: #ddd;
+}
+
+.dark-mode .tablink {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark-mode .tablink:hover {
+  background-color: #666;
+}
+
+.dark-mode .tabcontent {
+  background-color: #222;
+  color: #ddd;
+}
+
+.dark-mode .product img {
+  border-color: #ddd;
+}
+
+.dark-mode .aldy,
+.dark-mode .kelesi {
+  color: #ddd;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;

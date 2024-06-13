@@ -9,17 +9,17 @@
   <body>
     <div class="navbar">
       <div class="name">Market</div>
-      <!-- <div class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> -->
       <div class="navigations">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#modal">Modal</a></li>
           <li><a href="#gallery">Gallery</a></li>
         </ul>
+      </div>
+      <div class="dark-mode-toggle">
+        <label class="switch">
+          <p id="darkModeToggle" onclick="toggleDarkMode()">🌗</p>
+        </label>
       </div>
     </div>
 
@@ -119,5 +119,20 @@
     </footer>
 
     <script src="js.js"></script>
+
+    <script>
+      function toggleDarkMode() {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        if (body.classList.contains("dark-mode")) {
+          body.classList.remove("dark-mode");
+          darkModeToggle.innerHTML = "🌗";
+        } else {
+          body.classList.add("dark-mode");
+          darkModeToggle.innerHTML = "🌞";
+        }
+      }
+    </script>
   </body>
 </html>
