@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="name">Market</div>
+      <!-- <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> -->
+      <div class="navigations">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#modal">Modal</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header id="home">
+      <h1>Welcome to Market</h1>
+      <p>We are welcome!</p>
+    </header>
+
+    <div id="modal" class="container">
+      <button type="submit" class="click" onclick="openPopup()">
+        Click ME!
+      </button>
+      <div class="popup" id="popup">
+        <h2>Thank you!</h2>
+        <p>We are happy!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+
+    <div id="products" class="tabs">
+      <button class="tablink" data-tab="first">First</button>
+      <button class="tablink" data-tab="second">Second</button>
+      <button class="tablink" data-tab="third">Third</button>
+    </div>
+
+    <div id="first" class="tabcontent">
+      <h3>First</h3>
+      <div class="products">
+        <div class="product">
+          <img src="img/watermelon.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/orange.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/watermelon.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="second" class="tabcontent">
+      <h3>Second</h3>
+      <div class="products">
+        <div class="product">
+          <img src="img/apple.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/orange.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/watermelon.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="third" class="tabcontent">
+      <h3>Third</h3>
+      <div class="products">
+        <div class="product">
+          <img src="img/apple.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/orange.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+        <div class="product">
+          <img src="img/watermelon.jpg" alt="Fruit 1" />
+          <p>Fruit 1</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="text-align: center">Image Gallery</h2>
+    <div id="gallery" class="images">
+      <div class="myImages">
+        <div class="numberText">1/2</div>
+        <img src="img/bali.jpg" style="width: 100%; height: 46rem" />
+      </div>
+      <div class="myImages">
+        <div class="numberText">2/2</div>
+        <img src="img/borabora.jpg" style="width: 100%; height: 46rem" />
+      </div>
+
+      <a class="aldy" onclick="plusImages(-1)">❮</a>
+      <a class="kelesi" onclick="plusImages(1)">❯</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Market. All rights reserved.</p>
+    </footer>
+
+    <script src="js.js"></script>
+  </body>
+</html>
